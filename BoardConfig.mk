@@ -15,7 +15,7 @@ BUILD_BROKEN_DUP_RULES := true
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/munch.config
+TARGET_KERNEL_CONFIG += vendor/munch_defconfig
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_munch
@@ -23,6 +23,10 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_munch
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# Partitions
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_EROFS_COMPRESSOR := lz4hc,9
 
 # Inherit from the proprietary version
 include vendor/xiaomi/munch/BoardConfigVendor.mk
