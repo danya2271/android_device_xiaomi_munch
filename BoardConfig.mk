@@ -24,6 +24,9 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_munch
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# KuroNekoDroid
+MAX_PERF := true
+
 # Partitions
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
 BOARD_EROFS_COMPRESSOR := lz4hc,9
