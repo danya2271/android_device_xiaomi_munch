@@ -24,7 +24,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_munch
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# KuroNekoDroid
+# lineageDroid
 MAX_PERF := true
 
 # Partitions
